@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import CameraFeed from './CameraFeed';
 import CropReview from './CropReview';
 import { FilePlus, Camera, Download, Trash2, RotateCw, X } from 'lucide-react';
@@ -163,7 +164,7 @@ const ScannerApp: React.FC = () => {
                 </div>
             )}
 
-            {previewIndex !== null && (
+            {previewIndex !== null && createPortal(
                 <div
                     style={{
                         position: 'fixed', inset: 0,
@@ -187,7 +188,8 @@ const ScannerApp: React.FC = () => {
                         style={{ maxWidth: '100%', maxHeight: '90vh', objectFit: 'contain', borderRadius: '8px' }}
                         onClick={(e) => e.stopPropagation()}
                     />
-                </div>
+                </div>,
+                document.body
             )}
         </div>
     );
