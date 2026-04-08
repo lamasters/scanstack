@@ -98,14 +98,14 @@ const ScannerApp: React.FC = () => {
                         Take a picture or upload an image to start scanning documents into a PDF.
                     </p>
                     <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
-                        <button className="btn btn-primary" onClick={() => setCurrentView('camera')}>
+                        <button id="btn-take-photo-empty" className="btn btn-primary" onClick={() => setCurrentView('camera')}>
                             <Camera size={20} />
                             Take Photo
                         </button>
-                        <label className="btn btn-secondary">
+                        <label id="btn-upload-image-empty" className="btn btn-secondary">
                             <FilePlus size={20} />
                             Upload Image
-                            <input type="file" accept="image/*" onChange={handleFileUpload} className="hidden" />
+                            <input id="input-file-upload-empty" type="file" accept="image/*" onChange={handleFileUpload} className="hidden" />
                         </label>
                     </div>
                 </div>
@@ -113,7 +113,7 @@ const ScannerApp: React.FC = () => {
                 <div className="glass-panel">
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
                         <h2 style={{ fontWeight: 500 }}>{images.length} Page{images.length > 1 ? 's' : ''} Scanned</h2>
-                        <button className="btn btn-primary" onClick={handleDownloadPdf}>
+                        <button id="btn-save-pdf" className="btn btn-primary" onClick={handleDownloadPdf}>
                             <Download size={20} />
                             Save PDF
                         </button>
@@ -145,19 +145,19 @@ const ScannerApp: React.FC = () => {
                             </div>
                         ))}
 
-                        <div style={{ border: '2px dashed var(--glass-border)', borderRadius: '8px', display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'center', justifyContent: 'center', aspectRatio: '1/1.414', padding: '20px', cursor: 'pointer', transition: 'background 0.2s' }} onClick={() => setCurrentView('camera')} onMouseOver={e => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'} onMouseOut={e => e.currentTarget.style.background = 'transparent'}>
+                        <div id="btn-take-photo-grid" style={{ border: '2px dashed var(--glass-border)', borderRadius: '8px', display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'center', justifyContent: 'center', aspectRatio: '1/1.414', padding: '20px', cursor: 'pointer', transition: 'background 0.2s' }} onClick={() => setCurrentView('camera')} onMouseOver={e => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'} onMouseOut={e => e.currentTarget.style.background = 'transparent'}>
                             <div className="icon-btn" style={{ background: 'var(--accent-primary)', borderColor: 'transparent' }}>
                                 <Camera size={20} />
                             </div>
                             <span style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', textAlign: 'center' }}>Take Photo</span>
                         </div>
 
-                        <label style={{ border: '2px dashed var(--glass-border)', borderRadius: '8px', display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'center', justifyContent: 'center', aspectRatio: '1/1.414', padding: '20px', cursor: 'pointer', transition: 'background 0.2s' }} onMouseOver={e => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'} onMouseOut={e => e.currentTarget.style.background = 'transparent'}>
+                        <label id="btn-upload-image-grid" style={{ border: '2px dashed var(--glass-border)', borderRadius: '8px', display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'center', justifyContent: 'center', aspectRatio: '1/1.414', padding: '20px', cursor: 'pointer', transition: 'background 0.2s' }} onMouseOver={e => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'} onMouseOut={e => e.currentTarget.style.background = 'transparent'}>
                             <div className="icon-btn" style={{ background: 'rgba(255,255,255,0.1)', borderColor: 'var(--glass-border)' }}>
                                 <FilePlus size={20} />
                             </div>
                             <span style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', textAlign: 'center' }}>Upload File</span>
-                            <input type="file" accept="image/*" onChange={handleFileUpload} className="hidden" />
+                            <input id="input-file-upload-grid" type="file" accept="image/*" onChange={handleFileUpload} className="hidden" />
                         </label>
                     </div>
                 </div>
