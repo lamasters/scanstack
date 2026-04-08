@@ -144,9 +144,9 @@ const CropReview: React.FC<Props> = ({ imageUrl, onConfirm, onCancel }) => {
         corners.forEach(p => {
             ctx.beginPath();
             ctx.arc(p.x, p.y, radius, 0, Math.PI * 2);
-            ctx.fillStyle = '#fff';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
             ctx.fill();
-            ctx.strokeStyle = '#8b5cf6';
+            ctx.strokeStyle = 'rgba(139, 92, 246, 0.8)';
             ctx.lineWidth = radius * 0.2;
             ctx.stroke();
         });
