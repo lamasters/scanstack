@@ -1,5 +1,6 @@
-import { Camera } from 'lucide-react';
-import ScannerApp from './components/ScannerApp';
+import { Analytics } from "@vercel/analytics/next";
+import { Camera } from "lucide-react";
+import ScannerApp from "./components/ScannerApp";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main className="view-wrapper">
         <ScannerApp />
       </main>
+      <Analytics />
     </div>
   );
 }
