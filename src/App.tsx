@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 import { Camera } from "lucide-react";
 import ScannerApp from "./components/ScannerApp";
 
