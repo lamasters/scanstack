@@ -27,7 +27,7 @@ Make sure you have Node.js and npm installed on your machine.
 
 1. Clone the repository and navigate into the project directory:
    ```bash
-   cd doc_scanner
+   cd scanstack
    ```
 
 2. Install the dependencies:
