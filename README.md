@@ -1,5 +1,7 @@
 # ScanStack
 
+Available at [scanstack.net](https://scanstack.net)
+
 ScanStack is a web-based document scanner application built with React and TypeScript. It allows users to capture document pages via a web camera or by uploading images, automatically or manually crop the edges, and compile the processed images into a downloadable PDF.
 
 ## ✨ Features
