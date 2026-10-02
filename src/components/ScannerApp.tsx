@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import CameraFeed from "./CameraFeed";
 import CropReview from "./CropReview";
 import ScannerContent from "./ScannerContent";
+import { ScannerSchema } from "../schemas/ScannerSchema";
 import { createPortal } from "react-dom";
 import { generatePDF } from "../utils/pdfGenerator";
 
@@ -366,6 +367,7 @@ const ScannerApp: React.FC = () => {
           document.body,
         )}
       <ScannerContent />
+      <ScannerSchema />
     </div>
   );
 };
