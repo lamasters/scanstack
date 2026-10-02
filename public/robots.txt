@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://scanstack.net/sitemap.xml
+Sitemap: https://www.scanstack.net/sitemap.xml
