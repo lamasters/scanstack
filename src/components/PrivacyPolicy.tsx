@@ -46,12 +46,11 @@ export const PrivacyPolicy: React.FC = () => {
               1. Introduction
             </h2>
             <p>
-              Welcome to our Online Document Scanner tool. We respect your
-              privacy and are committed to protecting your personal data and
-              uploaded content. This Privacy Policy explains how our web
-              application operates, how we handle your files, and how
-              advertising partners like Google AdSense process information when
-              you use our website.
+              Welcome to ScanStack. We respect your privacy and are committed to
+              protecting your personal data and uploaded content. This Privacy
+              Policy explains how our web application operates, how we handle
+              your files, and how advertising partners like Google AdSense
+              process information when you use our website.
             </p>
           </section>
 
