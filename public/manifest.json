@@ -1,0 +1,49 @@
+{
+  "short_name": "ScamStack",
+  "name": "ScanStack - Free Online Document & Image to PDF Scanner",
+  "description": "Instantly capture, crop, and convert your images to high-quality PDFs right in your browser.",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48 32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "categories": [
+    "productivity",
+    "utilities",
+    "tools"
+  ],
+  "shortcuts": [
+    {
+      "name": "Scan Document",
+      "short_name": "Scan",
+      "description": "Open document scanner directly",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
